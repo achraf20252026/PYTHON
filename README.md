@@ -88,3 +88,6 @@ Ce projet est développé exclusivement en Python avec le framework Django, offr
   - Django Channels pour la communication en temps réel avec les capteurs IoT.
 
 ---
+
+
+**KHAIROUNI ACHRAF - ROBAII IKRAM **
