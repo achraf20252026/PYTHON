@@ -90,4 +90,5 @@ Ce projet est développé exclusivement en Python avec le framework Django, offr
 ---
 
 
-- **KHAIROUNI ACHRAF - ROBAII IKRAM**
+- **EDITEUR**
+  - **KHAIROUNI ACHRAF - ROBAII IKRAM**
