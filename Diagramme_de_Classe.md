@@ -15,6 +15,8 @@ Ce document présente le diagramme de classe décrivant les principales entités
 
 ## Diagramme (PlantUML)
 
+- [**Lien de l'image**](https://uml.planttext.com/plantuml/png/bLHBRjmm3DqRy1s4sRHDC46pDRf8aCykG96a1r1aZg52eWnA6g1e2_GQFK4pv_1DUfBAzjWZAPuYsSaapVT8FlB2EaxEQrKMGd5hsOCHijkvRiU-bmLZQoRhYabqumSQNR47HnARqS1h0ciXDfuoGG1qPNJhuFs7qSI_6k-0BcijKLf7t86dtlcpB2ReBqugQGVFwy11SwbIQFltrs-9Lf2a6Tl2bK444V0pn9JECgZS0lSfI0C4T6DRBi1c6KVhOYRthOMKlpA23nLBWwcdXhw4DdUSifPCQ-o4de7VTxlWsWxv5YdKeSvhUFAkOjVX-IWr71ot4dDp48VhWsC6OTu1OspbC5b4hrvqzZENe07T8Wrjq74CUJVAy8ZQz5DEGviwKnXiDc6U7cZw9H_iKp_nemJUseUm8t9p1sWzg8Xra9RngTO8qFWjg9STkUM1C2rBeuUzqTBQOTvvyKEp7etZANO3sEjmdpUN0dH__9knQd1XesokzW7d7eIVGTwnIsl3fHYaPilYS3LMvoksNhFLnxEparM-O1LhkcU2u_7xzQacdPT5V1G-_GYHQSeqO9_ba2_PY6gMJLaaZed3UKH061H0-9_GMU8Le-wvKI5qDlNmXyB2An9aA0wycm7eEC8unBvfEnpx5gM9uYPfnP5bSG5OXyF-3m00)
+
 ```
 ┌─────────────────────────┐     ┌───────────────┐                                  
 │Société                  │     │Utilisateur    │                                  
