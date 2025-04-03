@@ -15,6 +15,67 @@ Ce document présente le diagramme de classe décrivant les principales entités
 
 ## Diagramme (PlantUML)
 
+```
+┌─────────────────────────┐     ┌───────────────┐                                  
+│Société                  │     │Utilisateur    │                                  
+├─────────────────────────┤     ├───────────────┤                                  
+│- id: int                │     │- id: int      │                                  
+│- nom: String            │     │- nom: String  │                                  
+│- adresse: String        │     │- email: String│                                  
+│+ creerCompte()          │     │+ s’inscrire() │                                  
+│+ ajouterAdministrateur()│     │+ seConnecter()│                                  
+└─────────────────────────┘     └───────────────┘                                  
+                                                                                   
+                                                                                   
+                                ┌─────────────────────┐                            
+            ┌────────────────┐  │Réservation          │                            
+            │Administrateur  │  ├─────────────────────┤                            
+            ├────────────────┤  │- id: int            │                            
+            │- id: int       │  │- dateDebut: DateTime│                            
+            │- niveau: String│  │- dateFin: DateTime  │                            
+            │+ gererEspaces()│  │- statut: String     │                            
+            └────────────────┘  │+ reserver()         │                            
+                                │+ annuler()          │                            
+                                └─────────────────────┘                            
+                                                                                   
+┌──────────────────────┐     ┌────────────────────────┐                            
+│Espace                │     │Paiement                │  ┌────────────────────────┐
+├──────────────────────┤     ├────────────────────────┤  │Reçu                    │
+│- id: int             │     │- id: int               │  ├────────────────────────┤
+│- type: String        │     │- montant: float        │  │- id: int               │
+│- localisation: String│     │- datePaiement: DateTime│  │- dateEmission: DateTime│
+│- description: String │     │- mode: String          │  │- details: String       │
+│+ proposerEspace()    │     │+ effectuerPaiement()   │  │+ genererRecu()         │
+└──────────────────────┘     └────────────────────────┘  └────────────────────────┘
+                                          |                                        
+                                                                                   
+                              ┌─────────────────────┐                              
+                              │Abonnement           │                              
+                              ├─────────────────────┤                              
+                              │- id: int            │                              
+                              │- dateDebut: DateTime│                              
+                              │- dateFin: DateTime  │                              
+                              │- tarifMensuel: float│                              
+                              │+ souscrire()        │                              
+                              │+ renouveller()      │                              
+                              └─────────────────────┘                              
+                                          |                                        
+                             ┌────────────────────────┐                            
+                             │Facture                 │                            
+                             ├────────────────────────┤                            
+                             │- id: int               │                            
+                             │- dateEmission: DateTime│                            
+                             │- montantTotal: float   │                            
+                             │+ genererFacture()      │                            
+                             └────────────────────────┘
+
+
+```
+
+
+
+
+
 ```plantuml
 @startuml
 class Société {
