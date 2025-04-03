@@ -33,6 +33,34 @@ Ce document décrit les principaux cas d’utilisation de la plateforme ainsi qu
 
 ## Diagramme de Cas d'Utilisation (PlantUML)
 
+-  [**Lien de image**](https://uml.planttext.com/plantuml/png/ZP9DJiCm48NtaNA7KLPqKR5dWLf5BQjAKKFPMycqCYHsDHw34E80d0Ho3b-CgTEaHUs2XJT-ttlpOyySAsBVDccYAhO4MUdtI32lMssqOrACdZ9G3ihvo5nHJ-A6TQDTL6xpHgFX26nE5TuTXvyMeKOebCPsGCfYP5QszaqabdBZfP2s9aAhPPga2M75okm4oOf6QcqjzO6vVRFqeiqkWuyq0UaQfjDxkCafT39NRjiz8vIsqg7Zq4tEcVcpzNmnV4GEvqWzX8u4MhYzgj1DpfGdrUXQf7Ne7D9hxDcDzaqF5Oegwqd_JJYAH-SOVwujjbiPseisB6sCllIDhPg-spM6Rp_v7zjl74_fLof7Jrd07MJ3r8-aZ1FhuQ6YxJ8nkbRBWojyjSXCm_kYM3xJP8Qcbi_u2m00)
+
+```
+
+             ┌────────────────────┐                          ┌──────────────┐                                     ┌──────────────────┐                       
+             │Super Administrateur│                          │Administrateur│                                     │Utilisateur/Client│                       
+             ├────────────────────┤                          ├──────────────┤                                     ├──────────────────┤                       
+             └────────────────────┘                          └──────────────┘                                     └──────────────────┘                       
+                                                                                                                            |                                
+                                                                                                                            |                                
+┌────────────────────┐  ┌──────────────────────┐   ┌─────────────┐   ┌────────────────────┐   ┌─────────────────┐   ┌───────────────┐   ┌──────────────────┐ 
+│Créer Compte Société│  │Ajouter Administrateur│   │Gérer Espaces│   │Valider Réservations│   │Parcourir Espaces│   │Réserver Espace│   │Effectuer Paiement│ 
+├────────────────────┤  ├──────────────────────┤   ├─────────────┤   ├────────────────────┤   ├─────────────────┤   ├───────────────┤   ├──────────────────┤ 
+└────────────────────┘  └──────────────────────┘   └─────────────┘   └────────────────────┘   └─────────────────┘   └───────────────┘   └──────────────────┘ 
+                                                                                                                            |                                
+                                                                                                   ┌────────────┐   ┌───────────────┐   ┌───────────────────┐
+                                                                                                   │Générer Reçu│   │Générer Facture│   │Système de Paiement│
+                                                                                                   ├────────────┤   ├───────────────┤   ├───────────────────┤
+                                                                                                   └────────────┘   └───────────────┘   └───────────────────┘
+                                                                                                                            |                                
+                                                                                                                                                             
+                                                                                                                 ┌─────────────────────┐                     
+                                                                                                                 │Module de Facturation│                     
+                                                                                                                 ├─────────────────────┤                     
+                                                                                                                 └─────────────────────┘                     
+
+```
+
 ```plantuml
 @startuml
 actor "Super Administrateur" as SA
